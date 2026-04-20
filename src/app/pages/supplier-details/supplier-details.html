@@ -1,1 +1,12 @@
-<p>supplier-details works!</p>
+<div *ngIf="supplier">
+  <h2>{{ supplier.name }}</h2>
+
+  <label>Name:</label>
+  <input [(ngModel)]="supplier.name" />
+
+  <label>Email:</label>
+  <input [(ngModel)]="supplier.email" />
+
+  <label>Phone:</label>
+  <input [(ngModel)]="supplier.phone" />
+</div>
