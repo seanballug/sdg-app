@@ -1,21 +1,35 @@
-<h2>Suppliers</h2>
+<h2 class="mb-3">Water Suppliers</h2>
 
-<div *ngIf="!(users$ | async)">Loading...</div>
+<p class="text-muted">
+  Organizations involved in water distribution and sanitation services.
+</p>
 
-<table *ngIf="users$ | async as users">
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Action</th>
-  </tr>
+<div *ngIf="!(users$ | async)" class="text-center">
+  <div class="spinner-border text-primary"></div>
+  <p>Loading...</p>
+</div>
 
-  <tr *ngFor="let user of users">
-    <td>{{ user.id }}</td>
-    <td>{{ user.name }}</td>
-    <td>{{ user.email }}</td>
-    <td>
-      <button (click)="view(user.id)">View</button>
-    </td>
-  </tr>
+<table *ngIf="users$ | async as users" class="table table-hover table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <button class="btn btn-sm btn-primary" (click)="view(user.id)">
+            <span class="badge bg-success">Active</span>
+          View
+        </button>
+      </td>
+    </tr>
+  </tbody>
 </table>
