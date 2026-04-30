@@ -1,59 +1,68 @@
-# SdgApp
+# 💧 SDG 6 Water Resource Monitoring App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+## 🎯 Sustainable Development Goal
+This project supports **SDG 6: Clean Water and Sanitation**, which aims to ensure availability and sustainable management of water and sanitation for all.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Project Description
+This Angular Single Page Application (SPA) simulates a system used to monitor water suppliers and organizations involved in water distribution.
 
+It demonstrates how digital systems can assist in organizing data, improving visibility, and supporting better decision-making in water management.
+
+---
+
+## 🧠 Rationale
+Access to clean water is essential for health, development, and sustainability.
+
+This project highlights how software systems can help track water suppliers, manage information, and support initiatives aimed at improving water access and sanitation services.
+
+---
+
+## 🧩 Features (Week 1–3)
+
+### Week 1
+- Angular project initialized
+- GitHub repository setup
+- README created with SDG and members
+
+### Week 2
+- Routing implemented (4+ routes)
+- Navigation with Router
+- Parameterized routes (`/suppliers/:id`)
+- Route guard (`CanActivate`)
+- Organized components
+
+### Week 3
+- API integration via HttpClient
+- Data fetched from external API
+- Service-based architecture
+- Interface for type safety
+- Async pipe used (no subscribe)
+- Loading state implemented
+
+---
+
+## 🌐 API Used
+https://jsonplaceholder.typicode.com/users  
+(Mock data representing water suppliers)
+
+---
+
+## 🛠️ Technologies Used
+- Angular (Standalone)
+- TypeScript
+- Bootstrap + Bootswatch
+- HTML / CSS
+
+---
+
+## 👥 Group Members
+- Sean Raymond De Guzman Ballug
+
+---
+
+## 🚀 How to Run
 ```bash
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
