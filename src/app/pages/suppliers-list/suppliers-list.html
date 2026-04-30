@@ -1,1 +1,21 @@
-<p>suppliers-list works!</p>
+<h2>Suppliers</h2>
+
+<div *ngIf="!(users$ | async)">Loading...</div>
+
+<table *ngIf="users$ | async as users">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>
+      <button (click)="view(user.id)">View</button>
+    </td>
+  </tr>
+</table>
